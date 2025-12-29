@@ -4,11 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
   </head>
 
   <body>
-    
+    <div class="container">
+      <header class="header">
+        <div class="header-start">
+          <div class="header-title">BookStore</div>
+        </div>
+
+        <nav class="header-nav-container">
+          <div class="header-nav home">
+            <img class="home-icon" src="images/home-icon.svg" alt="Home Icon">
+            <div class="header-nav-text home-text">Home</div>
+          </div>
+          <div class="header-nav">
+            <img class="new-arrivals-icon" src="images/new-arrivals-icon.svg" alt="Home Icon">
+            <div class="header-nav-text -text">New Arrivals</div>
+          </div>
+          <div class="header-nav">
+            <img class="featured-icon" src="images/featured-icon.svg" alt="Featured Icon">
+            <div class="header-nav-text -text">Featured</div>
+          </div>
+          <div class="header-nav">
+            <img class="shop-icon" src="images/shop-icon.svg" alt="Home Icon">
+            <div class="header-nav-text -text">Shop</div>
+          </div>
+        </nav>
+
+        <div class="header-end">
+          <div class="toggle-mode">
+            <img class="dark-mode-icon" src="images/dark-mode-icon.svg" alt="Dark Mode Icon">
+          </div>
+          <img class="cart-icon" src="images/cart-icon.svg" alt="Cart Icon">
+        </div>
+      </header>
+    </div>
   </body>
 
   <script type="module" src="scripts/script.js"></script>
