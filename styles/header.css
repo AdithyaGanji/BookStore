@@ -70,7 +70,6 @@
 /* ----- HEADER END ----- */
 .header-end {
   display: flex;
-  column-gap: 1.5rem;
 }
 
 .toggle-mode, .cart-icon {

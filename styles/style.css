@@ -37,3 +37,16 @@ a {
   font-size: 3rem;
   margin-bottom: 1.65rem;
 }
+
+.bg-on-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bg-on-hover:hover {
+  background-color: rgb(235, 235, 235);
+}

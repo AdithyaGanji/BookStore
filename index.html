@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/overlay.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/hero-section.css">
     <link rel="stylesheet" href="styles/carousel.css">
@@ -17,6 +18,15 @@
   </head>
 
   <body>
+    <div class="overlay">
+      <div class="selected-book">
+        <div class="bg-on-hover close-icon-container">
+          <img src="images/close-icon.svg" alt="Close Icon">
+        </div>
+        <div class="selected-book-content"></div>
+      </div>
+    </div>
+
     <div class="container">
       <header class="header">
         <div class="header-start">
@@ -43,10 +53,12 @@
         </nav>
 
         <div class="header-end">
-          <div class="toggle-mode">
+          <div class="bg-on-hover toggle-mode">
             <img class="dark-mode-icon" src="images/dark-mode-icon.svg" alt="Dark Mode Icon">
           </div>
-          <img class="cart-icon" src="images/cart-icon.svg" alt="Cart Icon">
+          <div class="bg-on-hover cart-container">
+            <img class="cart-icon" src="images/cart-icon.svg" alt="Cart Icon">
+          </div>
         </div>
       </header>
 
