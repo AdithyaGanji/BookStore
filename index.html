@@ -6,36 +6,40 @@
     <title>BookStore</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/hero-section.css">
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/featured-books.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
         <div class="header-start">
-          <div class="header-title">BookStore</div>
+          <span class="header-title">BookStore</span>
         </div>
-
-        <nav class="header-nav-container">
-          <div class="header-nav home">
+        
+        <nav class="header-navbar">
+          <a class="header-nav header-nav-home">
             <img class="home-icon" src="images/home-icon.svg" alt="Home Icon">
-            <div class="header-nav-text">Home</div>
-          </div>
-          <div class="header-nav new-arrivals">
+            <span class="header-nav-text">Home</span>
+          </a>
+          <a class="header-nav" href="#new-arrivals">
             <img class="new-arrivals-icon" src="images/new-arrivals-icon.svg" alt="Home Icon">
-            <div class="header-nav-text">New Arrivals</div>
-          </div>
-          <div class="header-nav featured">
+            <span class="header-nav-text">New Arrivals</span>
+          </a>
+          <a class="header-nav" href="#featured-books">
             <img class="featured-icon" src="images/featured-icon.svg" alt="Featured Icon">
-            <div class="header-nav-text">Featured</div>
-          </div>
-          <div class="header-nav shop">
+            <span class="header-nav-text">Featured</span>
+          </a>
+          <a class="header-nav" href="#book-store">
             <img class="shop-icon" src="images/shop-icon.svg" alt="Home Icon">
-            <div class="header-nav-text">Shop</div>
-          </div>
+            <span class="header-nav-text">Shop</span>
+          </a>
         </nav>
 
         <div class="header-end">
@@ -53,17 +57,39 @@
           <h2 class="hero-section-subheading">Up to 40% Off This Week</h2>
 
           <div class="hero-copy">
-            Discover your next favorite book, all in one place. Our online bookstore brings together timeless classics, modern bestsellers, and hidden gems—just a click away. Browse effortlessly,  and enjoy a seamless reading journey from screen to shelf. Because every great story deserves to find its reader.
+            Discover your next favorite book, all in one place. Our online bookstore brings together timeless classics,
+            modern bestsellers, and hidden gems—just a click away. Browse effortlessly, and enjoy a seamless reading
+            journey from screen to shelf. Because every great story deserves to find its reader.
           </div>
 
-          <a class="new-arrivals-btn-container" href="">
-            <div class="new-arrivals-text">Check our new arrivals</div>
+          <a class="new-arrivals-btn-container" href="#new-arrivals">
+            <p class="new-arrivals-text">Check our new arrivals</p>
             <div class="new-arrivals-btn">
-              <svg class="right-arrow-icon" xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#FFF"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+              <svg class="right-arrow-icon" xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#FFF"> <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" /> </svg>
             </div>
           </a>
         </div>
+
         <img class="hero-section-bg" src="images/hero-bg.png" alt="Hero Section Background">
+      </section>
+
+      <section id="new-arrivals" class="new-arrivals">
+        <h3 class="section-heading">New Arrivals</h3>
+        <div class="carousel new-arrival-books"></div>
+      </section>
+
+      <section id="featured-books" class="featured-books">
+        <h3 class="section-heading">Featured Books</h3>
+        <div class="featured-books-container">
+          <div class="featured-book-container"></div>
+
+          <div class="other-featured-books"></div>
+        </div>
+      </section>
+
+      <section id="book-store" class="book-store">
+        <h3 class="section-heading">Shop</h3>
+        <div class="carousel book-store-books"></div>
       </section>
     </div>
   </body>

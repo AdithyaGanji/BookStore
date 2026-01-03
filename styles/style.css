@@ -3,6 +3,7 @@
   --white: #FFF;
   --gray: #7B7B7B;
   --color-primary: rgb(60, 60, 224);
+  --color-secondary: #AC81FD;
   --bg-primary: #E7F2F3;
 }
 
@@ -17,6 +18,10 @@ html {
   font-family: 'Inter', sans-serif;
 }
 
+button {
+  font-family: 'Inter', sans-serif;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -24,5 +29,11 @@ a {
 
 .container {
   width: 90%;
+  max-width: 155rem;
   margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 3rem;
+  margin-bottom: 1.65rem;
 }

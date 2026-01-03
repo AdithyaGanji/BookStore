@@ -1,0 +1,122 @@
+/* ----- CAROUSEL STYLES ----- */
+.carousel {
+  display: flex;
+  column-gap: 3rem;
+  margin: 0 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.new-arrival-books {
+  anchor-name: --new-arrivals-carousel;
+}
+
+.book-store-books {
+  anchor-name: --book-store-carousel;
+}
+
+.carousel::scroll-button(right), .carousel::scroll-button(left) {
+  font-size: 5rem;
+  color: var(--color-primary);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+}
+
+.carousel::scroll-button(right) {
+  content: '❱';
+  position-area: right center;
+  translate: 25%;
+}
+
+.carousel::scroll-button(left) {
+  content: '❰';
+  position-area: left center;
+  translate: -25%;
+}
+
+.carousel::scroll-button(left):disabled, .carousel::scroll-button(right):disabled {
+  opacity: 0.3;
+  cursor: auto;
+}
+
+.new-arrival-books::scroll-button(left), .new-arrival-books::scroll-button(right) {
+  position-anchor: --new-arrivals-carousel;
+}
+
+.book-store-books::scroll-button(left), .book-store-books::scroll-button(right) {
+  position-anchor: --book-store-carousel;
+}
+
+.carousel-card {
+  scroll-snap-align: start;
+}
+
+/* ----- CAROUSELS ----- */
+.new-arrivals, .book-store {
+  margin: 5rem 0 7rem;
+}
+
+/* ----- BOOK (CAROUSEL CARD) STYLES  ----- */
+.book-frontcover-container {
+  width: fit-content;
+  padding: 2rem;
+  background-color: var(--bg-primary);
+  border-radius: 15px;
+}
+
+.book-frontcover {
+  width: 18.675rem;
+  height: 28rem;
+  box-shadow: 0 5px 15px 0 var(--gray);
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.book-frontcover:hover {
+  transform: scale(1.025, 1.025);
+}
+
+.book-details {
+  max-width: 22.6rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0.25rem 0 0;
+}
+
+.title-and-cart-option, .genre-and-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-title {
+  font-size: 1.75rem;
+  font-weight: 650;
+}
+
+.add-to-cart-icon {
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.genre-and-price {
+  margin-top: 1.25rem;
+}
+
+.book-genre {
+  color: var(--gray);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.book-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
