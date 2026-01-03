@@ -68,7 +68,7 @@
   width: fit-content;
   padding: 2rem;
   background-color: var(--bg-primary);
-  border-radius: 15px;
+  border-radius: 7.5px;
 }
 
 .book-frontcover {
@@ -105,8 +105,13 @@
   flex-shrink: 0;
 }
 
+.icon-added-to-cart {
+  padding: .75rem;
+  pointer-events: none;
+}
+
 .genre-and-price {
-  margin-top: 1.25rem;
+  margin-top: .5rem;
 }
 
 .book-genre {
