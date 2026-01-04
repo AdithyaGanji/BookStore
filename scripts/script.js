@@ -3,10 +3,6 @@ import { kickOffOverlay } from './overlay.js';
 import { addCartIconListener, addCartButtonListener } from './cart.js';
 import { formatCurrency } from './utils.js';
 
-document
-  .querySelector('.header-nav-home')
-  .classList.add('active-nav');
-
 (function injectNewArrivals() {
   const newArrivals = document.querySelector('.new-arrival-books');
   let html = '';
@@ -17,7 +13,12 @@ document
     html += `
       <div class="carousel-card">
         <div class="book-frontcover-container">
-          <img data-book-id="${curBook.bookId}" class="book-frontcover" src="${curBook.imageSource}">
+          <div class="book-fc-wrapper">
+            <div class="book-fc-overlay">
+              <button data-book-id="${curBook.bookId}" class="quick-view-btn">Quick View</button>
+            </div>
+            <img class="book-frontcover" src="${curBook.imageSource}">
+          </div>
         </div>
 
         <div class="book-details">
@@ -80,7 +81,7 @@ function injectFeaturedBook() {
   `
 
   document
-    .querySelector('.featured-book-container')
+    .querySelector('.active-fb-container')
     .innerHTML = featuredBookHTML;
 
   addCartButtonListener();
@@ -89,15 +90,15 @@ injectFeaturedBook();
 
 (function injectOtherFeaturedBooks() {
   let otherFeaturedBooksHTML = '';
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 5; i++) {
     let imageSource = books[featuredBooks[i]].imageSource;
     otherFeaturedBooksHTML += `
-      <img data-book-id="${books[featuredBooks[i]].bookId}" class="other-fbs-frontcover" src="${imageSource}">
+      <img data-book-id="${books[featuredBooks[i]].bookId}" class="other-fbs-frontcover other-fbs-frontcover-pos-${i + 1} other-fbs-frontcover-${books[featuredBooks[i]].bookId}" src="${imageSource}">
     `
   }
 
   document
-    .querySelector('.other-featured-books')
+    .querySelector('.other-fbs-container')
     .innerHTML = otherFeaturedBooksHTML;
 })();
 
@@ -111,7 +112,12 @@ injectFeaturedBook();
     html += `
       <div class="carousel-card">
         <div class="book-frontcover-container">
-          <img data-book-id="${curBook.bookId}" class="book-frontcover" src="${curBook.imageSource}">
+          <div class="book-fc-wrapper">
+            <div class="book-fc-overlay">
+              <button data-book-id="${curBook.bookId}" class="quick-view-btn">Quick View</button>
+            </div>
+            <img class="book-frontcover" src="${curBook.imageSource}">
+          </div>
         </div>
 
         <div class="book-details">
@@ -146,13 +152,38 @@ injectFeaturedBook();
           book = books[bookId];
           injectFeaturedBook();
         });
+
+      featuredBook
+        .addEventListener('mouseenter', () => {
+          const { bookId } = featuredBook.dataset;
+
+          for (let i = 0; i < 5; i++) {
+            if (Number(bookId) === featuredBooks[i])
+              continue;
+
+            document
+              .querySelector(`.other-fbs-frontcover-${featuredBooks[i]}`)
+              .style.opacity = '0.35';
+          }
+        });
+
+      featuredBook
+        .addEventListener('mouseleave', () => {
+          const { bookId } = featuredBook.dataset;
+
+          for (let i = 0; i < 5; i++) {
+            document
+              .querySelector(`.other-fbs-frontcover-${featuredBooks[i]}`)
+              .style.opacity = '1';
+          }
+        });
     });
 
   document
-    .querySelectorAll('.book-frontcover')
-    .forEach((bookFrontcover) => {
-      bookFrontcover
-        .addEventListener('click', () => kickOffOverlay(bookFrontcover.dataset.bookId));
+    .querySelectorAll('.quick-view-btn')
+    .forEach((quickViewButton) => {
+      quickViewButton
+        .addEventListener('click', () => kickOffOverlay(quickViewButton.dataset.bookId));
     });
 
   addCartIconListener();

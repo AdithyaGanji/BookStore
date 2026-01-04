@@ -12,7 +12,8 @@
   padding: 3.5rem 3rem 3.5rem 4rem;
 }
 
-.featured-book-container {
+/* ----- ACTIVE FEATURED BOOK ----- */
+.active-fb-container {
   width: 55%;
   background-color: var(--white);
   display: flex;
@@ -40,7 +41,7 @@
 .fb-price-details {
   display: flex;
   column-gap: 1rem;
-  margin-top: .85rem;
+  margin-top: .65rem;
 }
 
 .fb-discounted-price {
@@ -65,13 +66,13 @@
 }
 
 .fb-ad-key {
-  font-size: 1.65rem;  
+  font-size: 1.65rem;
   font-weight: 500;
 }
 
 .fb-ad-value {
   color: var(--gray);
-  font-size: 1.65rem;  
+  font-size: 1.65rem;
   font-weight: 450;
 }
 
@@ -114,21 +115,58 @@
   cursor: pointer;
 }
 
-.other-featured-books {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 2.25rem;
-  row-gap: 2rem;
+/* ----- OTHER FEATURED BOOKS ----- */
+.other-fbs-container {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .other-fbs-frontcover {
   width: 14.675rem;
   height: 21.5rem;
-  border-radius: 7.5px;
+  box-shadow: 0 3px 10px 0 rgb(67, 67, 67);
   cursor: pointer;
-  transition: transform 0.1s;
+  transition: transform 0.1s, opacity 0.1s;
+}
+
+.other-fbs-frontcover-pos-1 {
+  position: relative;
+  z-index: 10;
+  left: 7.5%;
+  bottom: 0;
+}
+
+.other-fbs-frontcover-pos-2 {
+  position: absolute;
+  z-index: 20;
+  left: 27.5%;
+  bottom: 15%;
+}
+
+.other-fbs-frontcover-pos-3 {
+  position: absolute;
+  z-index: 30;
+  left: 42.5%;
+  bottom: 30%;
+}
+
+.other-fbs-frontcover-pos-4 {
+  position: absolute;
+  z-index: 20;
+  left: 57.5%;
+  bottom: 15%;
+}
+
+.other-fbs-frontcover-pos-5 {
+  position: absolute;
+  z-index: 10;
+  left: 72.5%;
+  bottom: 0;
 }
 
 .other-fbs-frontcover:hover {
   transform: scale(1.05, 1.05);
+  z-index: 999;
 }

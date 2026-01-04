@@ -71,16 +71,46 @@
   border-radius: 7.5px;
 }
 
+.book-fc-wrapper {
+  transition: transform 0.1s;
+}
+
+.book-fc-wrapper:hover {
+  transform: scale(1.025, 1.025);
+}
+
 .book-frontcover {
   width: 18.675rem;
   height: 28rem;
   box-shadow: 0 5px 15px 0 var(--gray);
-  cursor: pointer;
-  transition: transform 0.1s;
 }
 
-.book-frontcover:hover {
-  transform: scale(1.025, 1.025);
+.book-fc-overlay {
+  width: 18.675rem;
+  height: 28rem;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.quick-view-btn {
+  font-size: 1.75rem;
+  font-weight: 650;
+  color: var(--white);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.quick-view-btn:hover {
+  opacity: 0.85;
+}
+
+.book-fc-wrapper:hover .book-fc-overlay {
+  display: flex;
 }
 
 .book-details {
