@@ -13,7 +13,7 @@
   max-width: calc(0.46 * 155rem);
   background-color: var(--white);
   border-radius: 15px;
-  padding: 1rem 1.25rem 4.35rem 3rem;
+  padding: .75rem 1rem 3.75rem 2.5rem;
 }
 
 .selected-book-content {
@@ -23,7 +23,7 @@
 }
 
 .selected-book-content .fb-description {
-  width: 95%;
+  width: 97%;
 }
 
 .close-icon-container {

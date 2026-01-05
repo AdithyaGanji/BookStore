@@ -1,5 +1,6 @@
 import { shuffle } from './utils.js';
 
+// Data related to Books
 class Book {
   constructor(book) {
     this.bookId = book.bookId;
@@ -290,6 +291,67 @@ export const books = [
     "priceInCents": 1499,
     "imageSource": "images/book-images/book-25.jpg"
   }
-].map((book) => new Book(book) );
+].map((book) => new Book(book));
 
 export const featuredBooks = shuffle([3, 7, 11, 14, 18, 22]);
+
+// Data related to Testimonials
+class Testimonial {
+  constructor(testimonial) {
+    this.name = testimonial.name;
+    this.designation = testimonial.designation;
+    this.testimonial = testimonial.testimonial;
+    this.profilePictureSource = testimonial.profilePictureSource;
+  }
+}
+
+export const testimonials =  [
+  {
+    name: "Michael Chen",
+    designation: "Software Engineer",
+    testimonial: "The sci-fi selection is incredible. 'New World City' was mind-bending and arrived in perfect condition.",
+    profilePictureSource: "images/testimonial-profiles/testimonial-profile-1.png"
+  },
+  {
+    name: "Samantha Johnson",
+    designation: "CEO Of ABC Company",
+    testimonial: "This bookstore offers incredible variety, smooth checkout, and consistently delivers quality books on time.",
+    profilePictureSource: "images/testimonial-profiles/testimonial-profile-2.png"
+  },
+  {
+    name: "David Ross",
+    designation: "Elementary Teacher",
+    testimonial: "'Dalia Does a Mitzvah' is beautiful. My daughter reads it every single night and truly loves it.",
+    profilePictureSource: "images/testimonial-profiles/testimonial-profile-3.png"
+  },
+  {
+    name: "Sophia Carter",
+    designation: "Content Strategist",
+    testimonial: "Browsing genres feels effortless, and every purchase arrives well packaged with excellent customer support.",
+    profilePictureSource: "images/testimonial-profiles/testimonial-profile-4.png"
+  },
+  {
+    name: "Daniel Brooks",
+    designation: "Startup Founder",
+    testimonial: "The curated collection balances popular titles and hidden gems, making book shopping genuinely exciting.",
+    profilePictureSource: "images/testimonial-profiles/testimonial-profile-5.png"
+  },
+  {
+    name: "Elena Rodriguez",
+    designation: "Crime Podcast Host",
+    testimonial: "The thrillers here are curated perfectly. I could not put down 'Truth Stays Buried' all weekend long.",
+    profilePictureSource: "images/testimonial-profiles/testimonial-profile-6.png"
+  },
+  {
+    name: "Lucas Meyer",
+    designation: "UX Designer",
+    testimonial: "The clean interface and detailed descriptions help me choose books confidently without second guessing.",
+    profilePictureSource: "images/testimonial-profiles/testimonial-profile-7.png"
+  },
+  {
+    name: "Grace Turner",
+    designation: "Freelance Editor",
+    testimonial: "Reliable service and a diverse catalog make this my go-to destination for discovering new books.",
+    profilePictureSource: "images/testimonial-profiles/testimonial-profile-8.png"
+  }
+].map((testimonial) => new Testimonial(testimonial));

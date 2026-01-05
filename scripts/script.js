@@ -1,4 +1,4 @@
-import { books, featuredBooks } from './data.js';
+import { books, featuredBooks, testimonials } from './data.js';
 import { kickOffOverlay } from './overlay.js';
 import { addCartIconListener, addCartButtonListener } from './cart.js';
 import { formatCurrency } from './utils.js';
@@ -163,7 +163,7 @@ injectFeaturedBook();
 
             document
               .querySelector(`.other-fbs-frontcover-${featuredBooks[i]}`)
-              .style.opacity = '0.35';
+              .style.opacity = '0.3';
           }
         });
 
@@ -187,4 +187,64 @@ injectFeaturedBook();
     });
 
   addCartIconListener();
+})();
+
+(function injectTestimonials() {
+  // Testimonials Container 1:
+  const testimonialGroup1 = document.querySelector('.testimonials-group-1');
+
+  let testimonialsHTML1 = '';
+  for (let i = 0; i < 4; i++) {
+    const curTestimonial = testimonials[i];
+
+    testimonialsHTML1 += `
+      <div class="testimonial">
+        <img class="double-quotes-icon" src="images/double-quotes-icon.svg" alt="Double Quotes Icon">
+        
+        <p class="testimonial-content">${curTestimonial.testimonial}</p>
+
+        <div class="testimonial-person-information">
+          <img class="tp-profile" src="${curTestimonial.profilePictureSource}">
+          <div class="testimonial-person-details">
+            <p class="tp-name">${curTestimonial.name}</p>
+            <p class="tp-designation">${curTestimonial.designation}</p>
+          </div>
+        </div>
+      </div>
+    `
+  }
+  testimonialGroup1.innerHTML = testimonialsHTML1;
+
+  document
+    .querySelector('.testimonials-container-1')
+    .innerHTML = `${testimonialGroup1.outerHTML} + ${testimonialGroup1.outerHTML}`
+
+  // Testimonials Container 2:
+  const testimonialGroup2 = document.querySelector('.testimonials-group-2');
+  
+  let testimonialsHTML2 = '';
+  for (let i = 4; i < 8; i++) {
+    const curTestimonial = testimonials[i];
+
+    testimonialsHTML2 += `
+      <div class="testimonial">
+        <img class="double-quotes-icon" src="images/double-quotes-icon.svg" alt="Double Quotes Icon">
+        
+        <p class="testimonial-content">${curTestimonial.testimonial}</p>
+
+        <div class="testimonial-person-information">
+          <img class="tp-profile" src="${curTestimonial.profilePictureSource}">
+          <div class="testimonial-person-details">
+            <p class="tp-name">${curTestimonial.name}</p>
+            <p class="tp-designation">${curTestimonial.designation}</p>
+          </div>
+        </div>
+      </div>
+    `
+  }
+  testimonialGroup2.innerHTML = testimonialsHTML2;
+
+  document
+    .querySelector('.testimonials-container-2')
+    .innerHTML = `${testimonialGroup2.outerHTML} + ${testimonialGroup2.outerHTML}`
 })();

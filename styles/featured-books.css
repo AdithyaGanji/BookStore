@@ -126,7 +126,7 @@
 .other-fbs-frontcover {
   width: 14.675rem;
   height: 21.5rem;
-  box-shadow: 0 3px 10px 0 rgb(67, 67, 67);
+  box-shadow: 0 3px 10px 0 rgb(80, 80, 80);
   cursor: pointer;
   transition: transform 0.1s, opacity 0.1s;
 }
