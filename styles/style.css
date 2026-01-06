@@ -18,7 +18,7 @@ html {
   font-family: 'Inter', sans-serif;
 }
 
-button {
+button, input {
   font-family: 'Inter', sans-serif;
 }
 
@@ -27,15 +27,29 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   width: 90%;
   max-width: 155rem;
   margin: 0 auto;
 }
 
+.main-content {
+  margin-bottom: 7rem;
+}
+
 .section-heading {
   font-size: 3rem;
   margin-bottom: 1.65rem;
+}
+
+.title {
+  color: var(--color-primary);
+  font-size: 2.75rem;
+  font-weight: 600;
 }
 
 .bg-on-hover {

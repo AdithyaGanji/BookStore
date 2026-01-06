@@ -5,13 +5,6 @@
   margin: 1.75rem;
 }
 
-/* ----- HEADER START ----- */
-.header-title {
-  color: var(--color-primary);
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-
 /* ----- HEADER NAV ----- */
 .header-navbar {
   background-color: var(--bg-primary);

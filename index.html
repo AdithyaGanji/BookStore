@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/carousel.css">
     <link rel="stylesheet" href="styles/featured-books.css">
     <link rel="stylesheet" href="styles/user-testimonials.css">
+    <link rel="stylesheet" href="styles/footer.css">
   </head>
 
   <body>
@@ -31,7 +32,7 @@
     <div class="container">
       <header class="header">
         <div class="header-start">
-          <span class="header-title">BookStore</span>
+          <span class="title">BookStore</span>
         </div>
 
         <nav class="header-navbar">
@@ -63,63 +64,119 @@
         </div>
       </header>
 
-      <section class="hero-section">
-        <div class="hero-section-content">
-          <span class="explore-books-text">Explore Books You'll Love</span>
-          <h1 class="hero-section-heading">Discover your next read</h1>
-          <h2 class="hero-section-subheading">Up to 40% Off This Week</h2>
-
-          <div class="hero-copy">
-            Discover your next favorite book, all in one place. Our online bookstore brings together timeless classics,
-            modern bestsellers, and hidden gems—just a click away. Browse effortlessly, and enjoy a seamless reading
-            journey from screen to shelf. Because every great story deserves to find its reader.
-          </div>
-
-          <a class="new-arrivals-btn-container" href="#new-arrivals">
-            <p class="new-arrivals-text">Check our new arrivals</p>
-            <div class="new-arrivals-btn">
-              <svg class="right-arrow-icon" xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960"
-                width="25px" fill="#FFF">
-                <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
-              </svg>
+      <main class="main-content">
+        <section class="hero-section">
+          <div class="hero-section-content">
+            <span class="explore-books-text">Explore Books You'll Love</span>
+            <h1 class="hero-section-heading">Discover your next read</h1>
+            <h2 class="hero-section-subheading">Up to 40% Off This Week</h2>
+            <div class="hero-copy">
+              Discover your next favorite book, all in one place. Our online bookstore brings together timeless classics,
+              modern bestsellers, and hidden gems—just a click away. Browse effortlessly, and enjoy a seamless reading
+              journey from screen to shelf. Because every great story deserves to find its reader.
             </div>
-          </a>
+            <a class="new-arrivals-btn-container" href="#new-arrivals">
+              <p class="new-arrivals-text">Check our new arrivals</p>
+              <div class="new-arrivals-btn">
+                <svg class="right-arrow-icon" xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960"
+                  width="25px" fill="#FFF">
+                  <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <img class="hero-section-bg" src="images/hero-bg.png" alt="Hero Section Background">
+        </section>
+
+        <section id="new-arrivals" class="new-arrivals">
+          <h3 class="section-heading">New Arrivals</h3>
+          <div class="carousel new-arrival-books"></div>
+        </section>
+
+        <section id="featured-books" class="featured-books">
+          <h3 class="section-heading">Featured Books</h3>
+          <div class="featured-books-container">
+            <div class="active-fb-container"></div>
+            <div class="other-fbs-container"></div>
+          </div>
+        </section>
+
+        <section id="book-store" class="book-store">
+          <h3 class="section-heading">Shop</h3>
+          <div class="carousel book-store-books"></div>
+        </section>
+
+        <section class="testimonials">
+          <div class="testimonials-heading-wrapper">
+            <h3 class="section-heading testimonials-heading">Hear about us from our beloved customers</h3>
+          </div>
+          <div class="testimonials-container testimonials-container-1">
+            <div class="testimonials-group testimonials-group-1"></div>
+          </div>
+          <div class="testimonials-container testimonials-container-2">
+            <div class="testimonials-group testimonials-group-2"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-first-half">
+          <span class="title footer-title">BookStore</span>
+
+          <nav class="footer-nav">
+            <ul class="nav-links">
+              <h4 class="nav-links-header">Quick Links</h4>
+              <li><a href="#" class="nav-link">Home</a></li>
+              <li><a href="#new-arrivals" class="nav-link">New Arrivals</a></li>
+              <li><a href="#featured-books" class="nav-link">Featured</a></li>
+              <li><a href="#book-store" class="nav-link">Shop</a></li>
+              <li><a href="" class="nav-link">FAQs</a></li>
+            </ul>
+            <ul class="nav-links">
+              <h4 class="nav-links-header">Top Genres</h4>
+              <li><a href="" class="nav-link">Fiction</a></li>
+              <li><a href="" class="nav-link">Non-Fiction</a></li>
+              <li><a href="" class="nav-link">Sci-Fi & Fantasy</a></li>
+              <li><a href="" class="nav-link">Mystery & Thrillers</a></li>
+              <li><a href="" class="nav-link">Children's Books</a></li>
+            </ul>
+            <ul class="nav-links">
+              <h4 class="nav-links-header">Discover</h4>
+              <li><a href="" class="nav-link">Our Story</a></li>
+              <li><a href="" class="nav-link">Bestsellers</a></li>
+              <li><a href="" class="nav-link">Authors</a></li>
+              <li><a href="" class="nav-link">Gift Cards</a></li>
+              <li><a href="" class="nav-link">Terms of Service</a></li>
+            </ul>
+            <ul class="nav-links">
+              <h4 class="nav-links-header">Community</h4>
+              <li><a href="" class="nav-link">Events & Workshops</a></li>
+              <li><a href="" class="nav-link">Book Club</a></li>
+              <li><a href="" class="nav-link">Our Blog</a></li>
+              <li><a href="" class="nav-link">Affiliate Program</a></li>
+            </ul>
+            <ul class="nav-links">
+              <h4 class="nav-links-header">Customer Support</h4>
+              <li><a href="" class="nav-link">Contact Us</a></li>
+              <li><a href="" class="nav-link">Track Your Order</a></li>
+              <li><a href="" class="nav-link">Shipping Policy</a></li>
+              <li><a href="" class="nav-link">Returns & Refunds</a></li>
+              <li><a href="" class="nav-link">Privacy Policy</a></li>
+            </ul>
+          </nav>
+
+          <div class="social-media-handles">
+            <svg class="twitter-x-icon social-media-handle-icon" viewBox="0 0 15 13" fill="#00000096"><path d="M11.787.523h2.109L9.289 5.788l5.42 7.164h-4.244L7.142 8.607 3.34 12.952H1.23l4.927-5.631L.958.523H5.31l3.004 3.972L11.787.523Zm-.74 11.167h1.169L4.674 1.719H3.421l7.626 9.971Z"></path></svg>
+            <svg class="facebook-icon social-media-handle-icon" viewBox="0 0 18 18" fill="#00000096"><path d="M17.999 8.999c0-4.97-4.029-8.999-8.999-8.999s-8.999 4.029-8.999 8.999c0 4.492 3.291 8.215 7.593 8.89v-6.289h-2.285v-2.601h2.285v-1.983c0-2.255 1.344-3.501 3.399-3.501 0.985 0 2.015 0.176 2.015 0.176v2.215h-1.135c-1.118 0-1.467 0.694-1.467 1.405v1.688h2.496l-0.399 2.601h-2.097v6.289c4.302-0.675 7.593-4.398 7.593-8.89z"></path></svg>
+            <svg class="youtube-icon social-media-handle-icon" viewBox="0 0 18 18" fill="#00000096"><path d="M9 2.070c-8.845 0-9 0.787-9 6.93s0.155 6.93 9 6.93 9-0.787 9-6.93-0.155-6.93-9-6.93zM11.884 9.301l-4.041 1.886c-0.354 0.164-0.644-0.020-0.644-0.41v-3.553c0-0.39 0.29-0.574 0.644-0.41l4.041 1.886c0.354 0.166 0.354 0.436 0 0.601z"></path></svg>
+            <svg class="instagram-icon social-media-handle-icon" viewBox="0 0 18 18" fill="#00000096"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.621c2.405 0 2.689.011 3.635.053.879.039 1.354.186 1.67.309.418.162.721.359 1.034.671.316.316.51.615.675 1.034.123.316.271.795.309 1.67.042.949.053 1.234.053 3.635s-.011 2.689-.053 3.635c-.039.879-.186 1.354-.309 1.67a2.802 2.802 0 01-.671 1.034c-.316.316-.615.51-1.034.675-.316.123-.795.271-1.67.309-.949.042-1.234.053-3.635.053s-2.689-.011-3.635-.053c-.879-.039-1.354-.186-1.67-.309a2.802 2.802 0 01-1.034-.671 2.815 2.815 0 01-.675-1.034c-.123-.316-.271-.795-.309-1.67-.042-.949-.053-1.234-.053-3.635s.011-2.689.053-3.635c.039-.879.186-1.354.309-1.67.162-.418.359-.721.671-1.034.316-.316.615-.51 1.034-.675.316-.123.795-.271 1.67-.309.946-.042 1.23-.053 3.635-.053zM9 0C6.557 0 6.251.011 5.291.053 4.335.095 3.677.25 3.108.471a4.389 4.389 0 00-1.596 1.041A4.404 4.404 0 00.471 3.105C.25 3.678.095 4.332.053 5.288.011 6.251 0 6.557 0 9c0 2.443.011 2.749.053 3.709.042.956.197 1.614.418 2.183a4.389 4.389 0 001.041 1.596 4.392 4.392 0 001.593 1.037c.573.221 1.227.376 2.183.418.96.042 1.266.053 3.709.053s2.749-.011 3.709-.053c.956-.042 1.614-.197 2.183-.418a4.413 4.413 0 001.593-1.037c.5-.499.809-1.002 1.037-1.593.221-.573.376-1.227.418-2.183.042-.96.053-1.266.053-3.709s-.011-2.749-.053-3.709c-.042-.956-.197-1.614-.418-2.183a4.21 4.21 0 00-1.03-1.6A4.392 4.392 0 0014.896.474c-.573-.221-1.227-.376-2.183-.418C11.75.01 11.444 0 9 0zm0 4.377A4.625 4.625 0 004.377 9 4.625 4.625 0 009 13.623 4.625 4.625 0 0013.623 9 4.625 4.625 0 009 4.377zm0 7.622A3 3 0 119 6 3 3 0 019 12zm4.806-6.726a1.079 1.079 0 100-2.158 1.079 1.079 0 000 2.158z"></path></svg>
+          </div>
         </div>
 
-        <img class="hero-section-bg" src="images/hero-bg.png" alt="Hero Section Background">
-      </section>
-
-      <section id="new-arrivals" class="new-arrivals">
-        <h3 class="section-heading">New Arrivals</h3>
-        <div class="carousel new-arrival-books"></div>
-      </section>
-
-      <section id="featured-books" class="featured-books">
-        <h3 class="section-heading">Featured Books</h3>
-        <div class="featured-books-container">
-          <div class="active-fb-container"></div>
-
-          <div class="other-fbs-container"></div>
+        <div class="footer-second-half">
+          <p class="copyright-text">Copyright 2026 © All Rights Reserved.</p>
         </div>
-      </section>
-
-      <section id="book-store" class="book-store">
-        <h3 class="section-heading">Shop</h3>
-        <div class="carousel book-store-books"></div>
-      </section>
-
-      <section class="testimonials">
-        <div class="testimonials-heading-wrapper">
-          <h3 class="section-heading testimonials-heading">Hear about us from our beloved customers</h3>
-        </div>
-        <div class="testimonials-container testimonials-container-1">
-          <div class="testimonials-group testimonials-group-1"></div>
-        </div>
-
-        <div class="testimonials-container testimonials-container-2">
-          <div class="testimonials-group testimonials-group-2"></div>
-        </div>
-      </section>
+      </footer>
     </div>
   </body>
 
