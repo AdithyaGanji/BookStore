@@ -2,9 +2,10 @@
   --black: #000;
   --white: #FFF;
   --gray: #7B7B7B;
-  --color-primary: rgb(60, 60, 224);
+  --color-primary: #3C3CE0;
   --color-secondary: #AC81FD;
   --bg-primary: #E7F2F3;
+  --bg-secondary: #F8F6FB;
 }
 
 * {

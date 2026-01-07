@@ -68,3 +68,10 @@
 .toggle-mode, .cart-icon {
   cursor: pointer;
 }
+
+/* ----- ANIMATION WHEN SCROLLED ----- */
+.header {
+  opacity: 0;
+  translate: 0 -30%;
+  transition: translate 0.3s linear, opacity 0.3s linear;
+}

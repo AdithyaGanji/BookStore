@@ -1,3 +1,4 @@
+import { addCarouselCardObservers } from './observers.js';
 import { books, featuredBooks, testimonials } from './data.js';
 import { kickOffOverlay } from './overlay.js';
 import { addCartIconListener, addCartButtonListener } from './cart.js';
@@ -221,7 +222,7 @@ injectFeaturedBook();
 
   // Testimonials Container 2:
   const testimonialGroup2 = document.querySelector('.testimonials-group-2');
-  
+
   let testimonialsHTML2 = '';
   for (let i = 4; i < 8; i++) {
     const curTestimonial = testimonials[i];
@@ -248,3 +249,5 @@ injectFeaturedBook();
     .querySelector('.testimonials-container-2')
     .innerHTML = `${testimonialGroup2.outerHTML} + ${testimonialGroup2.outerHTML}`
 })();
+
+addCarouselCardObservers();

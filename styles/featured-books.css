@@ -169,3 +169,10 @@
   transform: scale(1.05, 1.05);
   z-index: 999;
 }
+
+/* ----- ANIMATION WHEN SCROLLED ----- */
+.active-fb-container, .other-fbs-container {
+  translate: 0 -20%;
+  opacity: 0;
+  transition: translate 0.65s ease, opacity 0.65s ease;
+}
