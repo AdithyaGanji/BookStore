@@ -41,40 +41,40 @@ import { formatCurrency } from './utils.js';
   newArrivals.innerHTML = html;
 })();
 
-let book = books[featuredBooks[0]];
+let bookObject = books[featuredBooks[0]];
 function injectFeaturedBook() {
   const featuredBookHTML = `
-    <img class="book-frontcover fb-frontcover" src="${book.imageSource}"></img>
+    <img class="book-frontcover fb-frontcover" src="${bookObject.imageSource}"></img>
 
     <div class="featured-book-details">
-      <span class="fb-title">${book.title}</span>
+      <span class="fb-title">${bookObject.title}</span>
 
       <div class="fb-price-details">
-        <span class="fb-discounted-price">$${formatCurrency(book.priceInCents * 0.7)}</span>
-        <span class="fb-original-price">$${formatCurrency(book.priceInCents)}</span>
+        <span class="fb-discounted-price">$${formatCurrency(bookObject.priceInCents * 0.7)}</span>
+        <span class="fb-original-price">$${formatCurrency(bookObject.priceInCents)}</span>
       </div>
 
       <div class="fb-additional-details">
         <span class="fb-ad-key">
-          Author: <span class="fb-ad-value">${book.author}</span>
+          Author: <span class="fb-ad-value">${bookObject.author}</span>
         </span>
         
         <span class="fb-ad-key">
-          Genre: <span class="fb-ad-value">${book.genre}</span>
+          Genre: <span class="fb-ad-value">${bookObject.genre}</span>
         </span>
         
         <span class="fb-ad-key">
-          Language: <span class="fb-ad-value">${book.language}</span>
+          Language: <span class="fb-ad-value">${bookObject.language}</span>
         </span>
 
         <span class="fb-ad-key">
-          Pages: <span class="fb-ad-value">${book.pages}</span>
+          Pages: <span class="fb-ad-value">${bookObject.pages}</span>
         </span>
       </div>
 
-      <div class="fb-description">${book.description}</div>
+      <div class="fb-description">${bookObject.description}</div>
 
-      <button data-book-id="${book.bookId}" class="fb-add-to-cart-container fb-add-to-cart-container-${book.bookId}">
+      <button data-book-id="${bookObject.bookId}" class="fb-add-to-cart-container fb-add-to-cart-container-${bookObject.bookId}">
         <svg stroke="#FFF" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 21h-3.926a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304h11.339a2 2 0 0 1 1.977 2.304l-.263 1.708"></path><path d="M16 19h6"></path><path d="M19 16v6"></path><path d="M9 11v-5a3 3 0 0 1 6 0v5"></path></svg>
         <div class="fb-add-to-cart-text">Add to Cart</div>
       </button>
@@ -147,10 +147,10 @@ injectFeaturedBook();
       featuredBook
         .addEventListener('click', () => {
           const { bookId } = featuredBook.dataset;
-          if (book === books[bookId])
+          if (bookObject === books[bookId])
             return;
 
-          book = books[bookId];
+          bookObject = books[bookId];
           injectFeaturedBook();
         });
 

@@ -1,0 +1,92 @@
+.payment-summary-container {
+  width: 27.5%;
+  height: max-content;
+  background-color: var(--bg-primary);
+  margin-top: 1.25rem;
+  border-radius: 10px;
+}
+
+.payment-summary-text-wrapper {
+  padding: 2rem 2rem 1.5rem;
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.payment-summary-text {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.payment-brakeup {
+  font-size: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 2.75rem 2rem;
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.payment-brakeup-subsection, .order-total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shipping-and-handling {
+  margin-bottom: .85rem;
+}
+
+.total-before-tax {
+  margin-top: .85rem;
+}
+
+.pbs-header {
+  font-weight: 500;
+}
+
+.pbs-amount {
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.order-total-and-payment-button {
+  padding: 2rem;
+}
+
+.order-total {
+  font-size: 2.25rem;
+  padding: 0 .5rem;
+}
+
+.order-total-text {
+  font-weight: 650;
+}
+
+.order-total-amount {
+  font-weight: 650;
+}
+
+.payment-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.75rem 0 0.25rem;
+}
+
+.payment-btn {
+  font-size: 1.65rem;
+  font-weight: 550;
+  color: var(--white);
+  background-color: var(--black);
+  border: none;
+  padding: 1.25rem 2.5rem;
+  border-radius: 7.5px;
+  cursor: pointer;
+}
+
+.payment-btn:hover {
+  opacity: 0.8;
+}
+
+.payment-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}

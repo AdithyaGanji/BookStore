@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Overview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cart-page/cart-items.css">
+    <link rel="stylesheet" href="styles/cart-page/payment-summary.css">
+  </head>
+
+  <body>
+    <section class="cart-overview">
+      <div class="cart-overview-wrapper">
+        <a class="bg-on-hover back-btn" href="index.html">
+          <img src="images/back-button-icon.svg" alt="Back Button">
+        </a>
+        <h1 class="cart-overview-text">Cart Overview</h1>
+      </div>
+    </section>
+
+    <div class="container">
+      <h2 class="empty-cart-message">Uh-oh! Your cart is empty.</h2>
+
+      <div class="cart-content">
+        <div class="cart-items-container"></div>
+
+        <div class="payment-summary-container"></div>
+      </div>
+    </div>
+  </body>
+
+  <script type="module" src="scripts/cart-page.js"></script>
+</html>

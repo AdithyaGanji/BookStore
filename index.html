@@ -6,24 +6,22 @@
     <title>BookStore</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/overlay.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/hero-section.css">
-    <link rel="stylesheet" href="styles/carousel.css">
-    <link rel="stylesheet" href="styles/featured-books.css">
-    <link rel="stylesheet" href="styles/user-testimonials.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/home-page/overlay.css">
+    <link rel="stylesheet" href="styles/home-page/header.css">
+    <link rel="stylesheet" href="styles/home-page/hero-section.css">
+    <link rel="stylesheet" href="styles/home-page/carousel.css">
+    <link rel="stylesheet" href="styles/home-page/featured-books.css">
+    <link rel="stylesheet" href="styles/home-page/user-testimonials.css">
+    <link rel="stylesheet" href="styles/home-page/footer.css">
     <link rel="stylesheet" href="styles/animations.css">
   </head>
 
   <body>
     <div class="overlay">
       <div class="selected-book">
-        <div class="bg-on-hover close-icon-container">
+        <div class="close-icon-container bg-on-hover">
           <img src="images/close-icon.svg" alt="Close Icon">
         </div>
         <div class="selected-book-content"></div>
@@ -59,9 +57,9 @@
           <div class="bg-on-hover toggle-mode">
             <img class="dark-mode-icon" src="images/dark-mode-icon.svg" alt="Dark Mode Icon">
           </div>
-          <div class="bg-on-hover cart-container">
+          <a href="cart.html" class="cart-container bg-on-hover">
             <img class="cart-icon" src="images/cart-icon.svg" alt="Cart Icon">
-          </div>
+          </a>
         </div>
       </header>
 

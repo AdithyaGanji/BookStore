@@ -172,7 +172,7 @@
 
 /* ----- ANIMATION WHEN SCROLLED ----- */
 .active-fb-container, .other-fbs-container {
-  translate: 0 -20%;
+  translate: 0 -12.5%;
   opacity: 0;
-  transition: translate 0.65s ease, opacity 0.65s ease;
+  transition: translate 0.7s ease, opacity 0.7s ease;
 }
