@@ -9,7 +9,7 @@
 }
 
 .selected-book {
-  width: 46%;
+  width: 71.3rem;
   max-width: calc(0.46 * 155rem);
   background-color: var(--white);
   border-radius: 15px;

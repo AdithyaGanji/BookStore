@@ -6,8 +6,7 @@
   display: flex;
   align-items: center;
   column-gap: .25rem;
-  width: 70%;
-  max-width: 100rem;
+  width: clamp(83.5rem, 70%, 92.5rem);
   margin: 0 auto;
   padding: 1.5rem 0;
 }
