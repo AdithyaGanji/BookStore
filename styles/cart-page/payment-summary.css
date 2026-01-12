@@ -1,5 +1,5 @@
 .payment-summary-container {
-  width: 27.5%;
+  min-width: 32.5rem;
   height: max-content;
   background-color: var(--bg-primary);
   margin-top: 1.25rem;

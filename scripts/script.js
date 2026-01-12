@@ -94,7 +94,7 @@ injectFeaturedBook();
   for (let i = 0; i < 5; i++) {
     let imageSource = books[featuredBooks[i]].imageSource;
     otherFeaturedBooksHTML += `
-      <img data-book-id="${books[featuredBooks[i]].bookId}" class="other-fbs-frontcover other-fbs-frontcover-pos-${i + 1} other-fbs-frontcover-${books[featuredBooks[i]].bookId}" src="${imageSource}">
+      <img data-book-id="${books[featuredBooks[i]].bookId}" class="other-fbs-frontcover ${i === 0 ? "other-fbs-frontcover-main" : `other-fbs-frontcover-pos-${i}`} other-fbs-frontcover-${books[featuredBooks[i]].bookId}" src="${imageSource}">
     `
   }
 
