@@ -1,11 +1,13 @@
 @media (max-width: 1230px) {
   html {
+    /* 1rem = 9px */
     font-size: 56.25%;
   }
 }
 
 @media (max-width: 750px) {
   html {
+    /* 1rem = 8px */
     font-size: 50%;
   }
 }

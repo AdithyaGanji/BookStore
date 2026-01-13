@@ -5,10 +5,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 5rem;
   padding: 0 5rem;
   margin-bottom: 3rem;
   border-radius: 20px;
-  column-gap: 5rem;
 }
 
 .hero-section-content {
@@ -20,9 +20,9 @@
 }
 
 .explore-books-text {
-  color: var(--color-primary);
   font-size: 2.5rem;
   font-weight: 650;
+  color: var(--color-primary);
 }
 
 .hero-section-heading {
@@ -37,15 +37,15 @@
 }
 
 .hero-copy {
-  color: var(--gray);
   font-size: 1.5rem;
+  color: var(--gray);
   margin: 3rem 0 2.5rem;
 }
 
 .new-arrivals-btn-container {
-  width: fit-content;
   font-size: 1.35rem;
   font-weight: 450;
+  width: fit-content;
   background-color: var(--white);
   display: flex;
   align-items: center;

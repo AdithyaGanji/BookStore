@@ -21,9 +21,9 @@
 }
 
 .carousel::scroll-button(right), .carousel::scroll-button(left) {
-  font-size: 5rem;
   color: var(--color-primary);
   background-color: transparent;
+  font-size: 5rem;
   border: none;
   cursor: pointer;
   position: fixed;
@@ -66,8 +66,8 @@
 /* ----- BOOK (CAROUSEL CARD) STYLES  ----- */
 .book-frontcover-container {
   width: fit-content;
-  padding: 2rem;
   background-color: var(--bg-primary);
+  padding: 2rem;
   border-radius: 7.5px;
 }
 

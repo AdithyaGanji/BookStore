@@ -1,10 +1,10 @@
 .overlay {
+  background-color: rgba(0, 0, 0, 0.55);
   display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.55);
   z-index: 99;
 }
 
@@ -31,6 +31,6 @@
   position: relative;
   top: .75rem;
   right: .25rem;
-  justify-self: flex-end;
   padding: .75rem;
+  justify-self: flex-end;
 }

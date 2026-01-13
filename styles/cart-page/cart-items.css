@@ -3,12 +3,12 @@
 }
 
 .cart-overview-wrapper {
+  width: clamp(83.5rem, 70%, 92.5rem);
   display: flex;
   align-items: center;
   column-gap: .25rem;
-  width: clamp(83.5rem, 70%, 92.5rem);
-  margin: 0 auto;
   padding: 1.5rem 0;
+  margin: 0 auto;
 }
 
 .back-btn {
@@ -59,11 +59,11 @@
 }
 
 .cart-item {
-  position: relative;
   background-color: var(--bg-primary);
   display: flex;
   align-items: center;
   column-gap: 2rem;
+  position: relative;
   padding: 1.75rem 4rem 1.75rem 1.5rem;
   border-radius: 10px;
 }
@@ -97,15 +97,15 @@
 }
 
 .book-discounted-price {
-  color: var(--color-secondary);
   font-size: 1.75rem;
   font-weight: 600;
+  color: var(--color-secondary);
 }
 
 .book-original-price {
-  color: var(--gray);
   font-size: 1.5rem;
   font-weight: 500;
+  color: var(--gray);
   text-decoration: line-through;
 }
 
@@ -138,8 +138,8 @@
 }
 
 .minus-btn-wrapper:disabled, .plus-btn-wrapper:disabled {
-  cursor: not-allowed;
   opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .subtotal-wrapper {
@@ -150,8 +150,8 @@
 }
 
 .subtotal-text {
-  color: rgb(34, 34, 34);
   font-weight: 550;
+  color: rgb(34, 34, 34);
 }
 
 .subtotal-amount {

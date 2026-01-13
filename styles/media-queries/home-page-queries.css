@@ -82,16 +82,16 @@
 
   .other-fbs-frontcover-pos-1 {
     position: absolute;
-    z-index: 10;
     left: 5.5%;
     bottom: 0;
+    z-index: 10;
   }
 
   .other-fbs-frontcover-pos-4 {
     position: absolute;
-    z-index: 10;
     right: 5.5%;
     bottom: 0;
+    z-index: 10;
   }
 
   .footer-first-half-wrapper {
@@ -110,17 +110,15 @@
 }
 
 @media (max-width: 950px) {
-  .header-navbar,
-  .hero-section-bg,
-  .other-fbs-container {
+  .header-navbar, .hero-section-bg, .other-fbs-container {
     display: none;
   }
 
   .hero-section {
     width: 92.5%;
+    height: fit-content;
     padding: 10rem 6.5rem;
     margin: 0 auto;
-    height: fit-content;
   }
 
   .hero-section-content {
@@ -191,8 +189,8 @@
   }
 
   .active-fb-container .featured-book-details {
-    align-items: center;
     text-align: center;
+    align-items: center;
   }
 
   .active-fb-container .fb-title {
@@ -239,8 +237,8 @@
   }
 
   .selected-book-content {
-    flex-direction: column;
     text-align: center;
+    flex-direction: column;
     justify-content: center;
   }
 
