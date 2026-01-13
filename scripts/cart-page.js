@@ -35,7 +35,7 @@ function displayCartItems() {
 
             <div class="subtotal-wrapper">
               <span class="subtotal-text">Subtotal:</span>
-              <span class="subtotal-amount">$${formatCurrency(bookObject.priceInCents * bookQuantity)}</span>
+              <span class="subtotal-amount">$${formatCurrency(bookObject.priceInCents * 0.7 * bookQuantity)}</span>
             </div>
           </div>
         </div>
